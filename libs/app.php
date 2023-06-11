@@ -1,5 +1,6 @@
 <?php
 // This class is used as a router to redirect the user to the specified url (controller).
+require_once 'controllers/errors.php';
 class App
 {
     function __construct()
@@ -42,7 +43,9 @@ class App
                         $controller->{$url[1]}(); // () is added so PHP loads this sentence as a dynamic method.
                     }
                 } else {
-                    // Error, the method does not exist!.
+                    // Error, the method does not exist!. Call 404.
+                    $controller = new Errors();
+                    $controller->render();
                 }
             } else {
                 // There is no url method... Load default method.
@@ -50,6 +53,8 @@ class App
             }
         } else {
             // The controller does not exist!. Call 404.
+            $controller = new Errors();
+            $controller->render();
         }
     }
 }
