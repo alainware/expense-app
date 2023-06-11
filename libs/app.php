@@ -5,7 +5,7 @@ class App
     function __construct()
     {
         error_log('APP::construct-> no hay controlador especificado.');
-        $url = isset($_GET['url']) ? $_GET['url'] : null;
+        $url = isset($_GET['url']) ? $_GET['url'] : '';
         $url = rtrim($url, '/');
         $url = explode('/', $url);
         if (empty($url[0])) {
