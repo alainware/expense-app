@@ -1,2 +1,4 @@
-[24-May-2023 05:35:10 UTC] Hello, errors!
-[24-May-2023 00:35:52 America/Mexico_City] Hello, errors!
+[10-Jun-2023 19:51:27 America/Mexico_City] Hello, errors!
+[10-Jun-2023 19:51:27 America/Mexico_City] APP::construct-> no hay controlador especificado.
+[10-Jun-2023 19:51:27 America/Mexico_City] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\repos\expense-app\libs\app.php on line 7
+[10-Jun-2023 19:51:27 America/Mexico_City] Login::construct-> inicio de Login

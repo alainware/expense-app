@@ -7,4 +7,5 @@
     ini_set("error_log", "C:\laragon\www\/repos\/expense-app\logs\php-error.log");
     error_log("Hello, errors!");
     require_once 'libs/app.php';
+    $app = new App();
 ?>
